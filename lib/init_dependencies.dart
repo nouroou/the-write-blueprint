@@ -1,0 +1,24 @@
+import 'package:get_it/get_it.dart';
+import 'package:hive/hive.dart';
+import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:the_write_blueprint/core/common/cubits/app_user/app_user_cubit.dart';
+import 'package:the_write_blueprint/core/common/network/connection_checker.dart';
+import 'package:the_write_blueprint/core/secrets/supabase_secrets.dart';
+import 'package:the_write_blueprint/features/auth/data/repository/auth_repository_impl.dart';
+import 'package:the_write_blueprint/features/auth/data/sources/auth_remote_data_source.dart';
+import 'package:the_write_blueprint/features/auth/domain/repository/auth_repository.dart';
+import 'package:the_write_blueprint/features/auth/domain/usecases/current_user.dart';
+import 'package:the_write_blueprint/features/auth/domain/usecases/user_signin.dart';
+import 'package:the_write_blueprint/features/auth/domain/usecases/user_signup.dart';
+import 'package:the_write_blueprint/features/auth/presentation/bloc/auth_bloc.dart';
+import 'package:the_write_blueprint/features/blog/data/repositories/blog_repository_impl.dart';
+import 'package:the_write_blueprint/features/blog/data/sources/blog_local_data_source.dart';
+import 'package:the_write_blueprint/features/blog/data/sources/blog_remote_data_source.dart';
+import 'package:the_write_blueprint/features/blog/domain/repositories/blog_repository.dart';
+import 'package:the_write_blueprint/features/blog/domain/usecases/get_all_blogs.dart';
+import 'package:the_write_blueprint/features/blog/domain/usecases/upload_blog.dart';
+import 'package:the_write_blueprint/features/blog/presentation/bloc/blog_bloc.dart';
+
+part 'init_dependencies.main.dart';
