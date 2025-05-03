@@ -13,7 +13,7 @@ pubspec.lock
 .metadata
 
 #Secrets
-lib/core/secrets/supabase_secrets.dart
+lib/core/secrets
 
 # Android specific
 **/android/**/gradle-wrapper.jar
